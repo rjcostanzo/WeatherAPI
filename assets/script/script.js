@@ -4,8 +4,6 @@ var locationInput = '';
 var locationLatitude = 0;
 var locationLongitude = 0;
 
-var 
-
 function locationPrompt() {
     locationInput = prompt("Please enter a city, state, or country: ");
     fetchInformation(locationInput);
