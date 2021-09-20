@@ -10,10 +10,10 @@ function locationPrompt() {
 }
 
 
-function fetchInformation() {
+function fetchInformation(locationInput) {
     
     fetch(
-        'http://api.openweathermap.org/geo/1.0/direct?q=' + locationInput + '&limit=3&appid=8f0b1cc9479ed6c9966dcb4427c1b248'
+        'https://api.openweathermap.org/geo/1.0/direct?q=' + locationInput + '&limit=3&appid=8f0b1cc9479ed6c9966dcb4427c1b248'
     )
 
     .then(response => response.json())
@@ -30,7 +30,7 @@ function fetchInformation() {
         currentUnix = (Math.floor(currentUnix / 1000));
 
         fetch(
-            'http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=' + locationLatitude + '&lon=' + locationLongitude + '&dt=' + currentUnix + '&units=imperial&appid=8f0b1cc9479ed6c9966dcb4427c1b248'
+            'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=' + locationLatitude + '&lon=' + locationLongitude + '&dt=' + currentUnix + '&units=imperial&appid=8f0b1cc9479ed6c9966dcb4427c1b248'
         )
     
         .then(response => response.json())
