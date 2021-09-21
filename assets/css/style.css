@@ -8,10 +8,11 @@ html {
 }
 
 .container button {
-    background-color: rgba(0, 180, 0, 0.541);
+    background-color: rgba(177, 177, 177, 0.541);
     border: 2px solid rgba(32, 32, 32, 0.103);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: underline;
+    width: 150px;
 }
 
 header h1 {
@@ -28,4 +29,8 @@ header h1 {
 
 .container {
     text-align: center;
+}
+
+#currentContainer {
+    visibility: hidden;
 }

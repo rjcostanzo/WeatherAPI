@@ -14,26 +14,56 @@
     </header></br>
     <div class="container">
         <div class="row align-items-start">
-          <div class="col">
-            <button onclick="locationPrompt()">Search by Location</button></br></br>
+          <div class="col-3">
+            <button onclick="locationPrompt()">Search Location</button></br></br>
+              <div>
+                <h2>Recent Locations</h2></br>
+                <button id="clearLocalStorage" onclick="userStorage.clear();">Clear Locations</button></br></br>
+                <button id="savedLocation1" onclick="fetchInformation(userStorage.savedLocation1)">No Saved Location</button></br></br>
+                <button id="savedLocation2" onclick="fetchInformation(userStorage.savedLocation2)">No Saved Location</button></br></br>
+                <button id="savedLocation3" onclick="fetchInformation(userStorage.savedLocation3)">No Saved Location</button></br></br>
+                <button id="savedLocation4" onclick="fetchInformation(userStorage.savedLocation4)">No Saved Location</button></br></br>
+                <button id="savedLocation5" onclick="fetchInformation(userStorage.savedLocation5)">No Saved Location</button></br></br>
+                <button id="savedLocation6" onclick="fetchInformation(userStorage.savedLocation6)">No Saved Location</button></br></br>
+                <button id="savedLocation7" onclick="fetchInformation(userStorage.savedLocation7)">No Saved Location</button></br></br>
+                <button id="savedLocation8" onclick="fetchInformation(userStorage.savedLocation8)">No Saved Location</button></br></br>
+              </div>
           </div>
-        </div>
-      </div>
-
-      
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <h2>Saved Locations</h2>
-          <!-- SAVED LOCATIONS INSERT BELOW HERE -->
-        </div>
-        <div class="col">
-          <h2>Recent Searches</h2>
-          <!-- RECENT SEARCHES INSERT BELOW HERE -->
-        </div>
-        <div class="col">
-          <h2>Current Search</h2>
-          <!-- CURRENT SEARCH INSERT BELOW HERE -->
+          <div class="col-9">
+            <h2>Selected Location</h2></br>
+              <div>
+                  <h2 id="currentLocation">Enter a Location</h2></br>
+                  <div class="container" id="currentContainer">
+                  <div class="row">
+                    <div class="col" id="dayOneWeather">
+                      Today</br></br>
+                      <a id="dayOneTempHigh">92</a> / <a id="dayOneTempLow">78</a></br>
+                      <img id="dayOneIcon" src=""></img>
+                    </div>
+                    <div class="col" id="dayTwoWeather">
+                      Tomorrow</br></br>
+                      <a id="dayTwoTempHigh">92</a> / <a id="dayTwoTempLow">78</a></br>
+                      <img id="dayTwoIcon" src=""></img>
+                    </div>
+                    <div class="col" id="dayThreeWeather">
+                      3 Days Ahead</br></br>
+                      <a id="dayThreeTempHigh">92</a> / <a id="dayThreeTempLow">78</a></br>
+                      <img id="dayThreeIcon" src=""></img>
+                    </div>
+                    <div class="col" id="dayFourWeather">
+                      4 Days Ahead</br></br>
+                      <a id="dayFourTempHigh">92</a> / <a id="dayFourTempLow">78</a></br>
+                      <img id="dayFourIcon" src=""></img>
+                    </div>
+                    <div class="col" id="dayFiveWeather">
+                      5 Days Ahead</br></br>
+                      <a id="dayFiveTempHigh">92</a> / <a id="dayFiveTempLow">78</a></br>
+                      <img id="dayFiveIcon" src=""></img>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
